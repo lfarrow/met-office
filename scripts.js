@@ -1,5 +1,5 @@
 /* Constants */
-var baseUrl = 'http://datapoint.metoffice.gov.uk/public/data/',
+var baseUrl = 'https://datapoint.metoffice.gov.uk/public/data/',
 	apiKey = '551f7572-56ec-4090-a97e-11ea833f57b4';
 
 /* Elements */
