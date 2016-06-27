@@ -8,6 +8,10 @@ var locationsElement = $("#location");
 /* Helper Functions */
 function makeRequest(url, successCallback, errorCallback) {
 	return $.ajax({
+		headers: {
+	        'Accept': 'application/json',
+	        'Content-Type': 'text/plain'
+	    },
 		url: baseUrl + url + '&key=' + apiKey,
 		dataType: 'json',
 		method: 'GET',
