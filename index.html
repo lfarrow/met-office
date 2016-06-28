@@ -4,13 +4,33 @@
 	<title>MetOffice Application</title>
 </head>
 <body>
-	<form action="javascript:void(0);">
+	<form action="javascript:void(0);" id="form">
 		<label for="location">Location: </label>
 		<select name="location" id="location">
 			<option value="" disabled="disabled" selected="selected">- Select a location -</option>
 		</select>
-		<input type="submit">
+		<input type="submit" value="Get weather">
 	</form>
+	<div>
+		<h1 id="name"></h1>
+		<h2>Current Weather:</h2>
+		<div>
+			<h3>Last Updated:</h3>
+			<p id="dateTime"></p>
+		</div>
+		<div>
+			<h3>Weather:</h3>
+			<p id="weather"></p>
+		</div>	
+		<div>
+			<h3>Temperature:</h3>
+			<p id="temperature"></p>
+		</div>
+		<div>
+			<h3>Wind Speed/Direction:</h3>
+			<p id="wind"></p>
+		</div>				
+	</div>
 
 	<!-- Load Scripts -->
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
